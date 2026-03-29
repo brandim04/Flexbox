@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Sistema de Eventos</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background: #880e4f;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 60px;
+  background: #ad1457;
+  color: white;
+  text-align: center;
+}
+
+.banner button {
+  padding: 10px 20px;
+  background: #f06292;
+  border: none;
+  border-radius: 6px;
+  color: white;
+}
+
+.main {
+  display: flex;
+  gap: 25px;
+  padding: 30px;
+  background: #fce4ec;
+  min-height: 100vh;
+}
+
+.filtros {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 150px;
+}
+
+.filtros button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #f8bbd0;
+  color: #880e4f;
+}
+
+.eventos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex: 1;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: calc(50% - 10px);
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #f48fb1;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card button {
+  margin-top: auto;
+  padding: 8px;
+  background: #880e4f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #880e4f;
+  color: white;
+}
+</style>
+
+</head>
+<body>
+
+<div class="header">
+  <h1>Sistema de Eventos</h1>
+  <div class="menu">
+    <a href="#">Início</a>
+    <a href="#">Eventos</a>
+    <a href="#">Contato</a>
+  </div>
+</div>
+
+<div class="banner">
+  <h2>Descubra os melhores eventos de tecnologia</h2>
+  <button>Explorar eventos</button>
+</div>
+
+<div class="main">
+
+  <div class="filtros">
+    <h3>Filtros</h3>
+    <button>Tecnologia</button>
+    <button>Negócios</button>
+    <button>Educação</button>
+  </div>
+
+  <div class="eventos">
+
+    <div class="card">
+      <h4>Tech Conference 2026</h4>
+      <p>📅 10/04/2026</p>
+      <p>📍 Recife - PE</p>
+      <p>Evento com palestras e workshops sobre inovação.</p>
+      <button>Ver mais</button>
+    </div>
+
+    <div class="card">
+      <h4>Workshop de Java</h4>
+      <p>📅 15/04/2026</p>
+      <p>📍 Online</p>
+      <p>Aprenda Java na prática com especialistas.</p>
+      <button>Ver mais</button>
+    </div>
+
+    <div class="card">
+      <h4>Frontend Day</h4>
+      <p>📅 20/04/2026</p>
+      <p>📍 São Paulo - SP</p>
+      <p>Tudo sobre HTML, CSS, JS e frameworks modernos.</p>
+      <button>Ver mais</button>
+    </div>
+
+    <div class="card">
+      <h4>UX Experience</h4>
+      <p>📅 25/04/2026</p>
+      <p>📍 Fortaleza - CE</p>
+      <p>Evento focado em experiência do usuário.</p>
+      <button>Ver mais</button>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  <p>© 2026 Sistema de Eventos</p>
+</div>
+
+</body>
+</html>
